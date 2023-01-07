@@ -1,0 +1,104 @@
+.project{
+    width: 65%;
+    height: max-content;
+
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: azure;
+}
+
+.left{
+    box-shadow: 8px 10px 0px 0px  #579BB1;
+    border: 5px  #579BB1 solid;
+
+    display: flex;
+}
+
+.right{
+    box-shadow: -8px 10px 0px 0px #EF9A53;
+    border: 5px  #EF9A53 solid;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.project-img-right{
+    min-width: 30%;
+    height: 30vh;
+    background-color: #EF9A53;
+
+}
+
+.project-img-left{
+    min-width: 30%;
+    height: 30vh;
+    background-color: #EF9A53;
+}
+
+.project-contents{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0.5rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0.5rem;
+}
+
+.usage{
+    margin-top: 5px;
+}
+
+#github{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lives-img{
+    background-image: url("../images/Screenshot\ 2023-01-07\ 005843.png");
+    background-size: cover;
+    background-position-x: center;
+}
+
+.link{
+    font-size: 1vw;
+}
+
+#calc-pic{
+    background-image: url("../images/Screenshot\ 2023-01-07\ 012100.png");
+    background-size: cover;
+    background-position-x: center;
+}
+
+#WNBA-oic{
+    background-image: url("../images/Screenshot\ 2023-01-07\ 012606.png");
+    background-size: cover;
+    background-position-x: center;
+}
+
+
+@media screen and (max-width: 990px) {
+    .left{
+        flex-direction: column;
+    }
+
+    .right{
+        flex-direction: column;
+    }
+
+    .link{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .link{
+        font-size: 3vw;
+    }
+}
